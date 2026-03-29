@@ -9,6 +9,20 @@ Launch a personal website for free with:
 
 This repo is a no-framework website starter. It is designed to be the fastest path from clone to live site on GitHub Pages with your own domain.
 
+Live site: [danlex.github.io/codex-free-website](https://danlex.github.io/codex-free-website/)
+
+Repo: [github.com/danlex/codex-free-website](https://github.com/danlex/codex-free-website)
+
+## Why this exists
+
+Most people do not need a framework to launch a personal site.
+
+They need:
+
+- a clean starting point
+- a publish flow they can actually finish
+- a path to their own domain
+
 ## What is included
 
 - A one-page no-framework starter
@@ -40,6 +54,8 @@ This repo is a no-framework website starter. It is designed to be the fastest pa
 Detailed instructions: [QUICKSTART.md](/Users/adan/work/claude/code/codex-free-website/QUICKSTART.md)
 
 Step-by-step explainer: [how-it-works.html](/Users/adan/work/claude/code/codex-free-website/how-it-works.html)
+
+Quickstart: [QUICKSTART.md](/Users/adan/work/claude/code/codex-free-website/QUICKSTART.md)
 
 ## Why no framework
 

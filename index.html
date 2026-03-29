@@ -7,11 +7,11 @@
     <meta
       name="description"
       content="Build and publish a free website with Codex, GitHub, GitHub Pages, and your own domain using plain HTML, CSS, and JavaScript."
-      content="Build and publish a free website with Codex, GitHub, GitHub Pages, and your own domain using plain HTML, CSS, and JavaScript."
     />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://danlex.github.io/codex-free-website/" />
     <meta name="theme-color" content="#060816" />
+    <meta name="author" content="danlex" />
     <meta
       property="og:title"
       content="Codex Free Website | Build your site and publish it for free"
@@ -25,9 +25,11 @@
     <meta property="og:site_name" content="Codex Free Website" />
     <meta
       property="og:image"
-      content="https://danlex.github.io/codex-free-website/og-image.svg"
+      content="https://danlex.github.io/codex-free-website/og-image.png"
     />
     <meta property="og:image:alt" content="Codex Free Website" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta
       name="twitter:title"
@@ -39,10 +41,14 @@
     />
     <meta
       name="twitter:image"
-      content="https://danlex.github.io/codex-free-website/og-image.svg"
+      content="https://danlex.github.io/codex-free-website/og-image.png"
     />
+    <meta name="twitter:image:alt" content="Codex Free Website" />
     <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-    <link rel="apple-touch-icon" href="favicon.svg" />
+    <link rel="icon" href="favicon-32.png" sizes="32x32" type="image/png" />
+    <link rel="icon" href="favicon-192.png" sizes="192x192" type="image/png" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="manifest" href="site.webmanifest" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -50,6 +56,47 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="how-it-works.css" />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        "name": "Build a free website with Codex and GitHub Pages",
+        "description": "A no-framework starter for publishing a website for free with GitHub Pages and your own domain.",
+        "url": "https://danlex.github.io/codex-free-website/",
+        "totalTime": "PT30M",
+        "tool": [
+          "Codex",
+          "GitHub",
+          "GitHub Pages"
+        ],
+        "step": [
+          {
+            "@type": "HowToStep",
+            "name": "Clone the repo"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Edit the starter files"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Customize the site in Codex"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Push to GitHub"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Enable GitHub Pages"
+          },
+          {
+            "@type": "HowToStep",
+            "name": "Connect your custom domain"
+          }
+        ]
+      }
+    </script>
   </head>
   <body>
     <div class="background-grid"></div>
@@ -66,6 +113,7 @@
             <a href="#steps">Steps</a>
             <a href="#domain">Domain</a>
             <a href="#publish">Publish</a>
+            <a href="https://github.com/danlex/codex-free-website">GitHub</a>
           </div>
         </nav>
 
@@ -80,7 +128,12 @@
             </p>
             <div class="hero-actions">
               <a class="button primary" href="#steps">See the steps</a>
-              <a class="button secondary" href="#publish">Publish checklist</a>
+              <a class="button secondary" href="QUICKSTART.md">Read quickstart</a>
+              <a
+                class="button tertiary"
+                href="https://github.com/danlex/codex-free-website"
+                >View repo</a
+              >
             </div>
             <div class="hero-meta">
               <div class="meta-pill">Codex</div>
@@ -307,6 +360,12 @@ git push -u origin main</code></pre>
             <div class="check-item">Set the domain inside the `CNAME` file</div>
             <div class="check-item">Enable GitHub Pages</div>
             <div class="check-item">Add the repo link to the LinkedIn assets</div>
+          </div>
+          <div class="publish-actions">
+            <a class="button primary" href="https://github.com/danlex/codex-free-website"
+              >Open GitHub Repo</a
+            >
+            <a class="button secondary" href="QUICKSTART.md">Open Quickstart</a>
           </div>
         </section>
 

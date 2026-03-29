@@ -1,0 +1,21 @@
+{
+  "name": "Codex Free Website",
+  "short_name": "Codex Free",
+  "description": "A no-framework starter for building and publishing a free website with GitHub Pages.",
+  "start_url": "/codex-free-website/",
+  "display": "standalone",
+  "background_color": "#060816",
+  "theme_color": "#060816",
+  "icons": [
+    {
+      "src": "favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
