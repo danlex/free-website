@@ -6,7 +6,8 @@
     <title>Codex Free Website | Build your site and publish it for free</title>
     <meta
       name="description"
-      content="Build and publish a free website with Codex, GitHub, GitHub Pages, and your own domain. Start with no framework, or choose Astro or Next.js."
+      content="Build and publish a free website with Codex, GitHub, GitHub Pages, and your own domain using plain HTML, CSS, and JavaScript."
+      content="Build and publish a free website with Codex, GitHub, GitHub Pages, and your own domain using plain HTML, CSS, and JavaScript."
     />
     <meta name="robots" content="index,follow" />
     <link rel="canonical" href="https://danlex.github.io/codex-free-website/" />
@@ -17,7 +18,7 @@
     />
     <meta
       property="og:description"
-      content="Build and publish a free website with Codex, GitHub, GitHub Pages, and your own domain."
+      content="Build and publish a free website with Codex, GitHub, GitHub Pages, and your own domain using plain HTML, CSS, and JavaScript."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://danlex.github.io/codex-free-website/" />
@@ -34,7 +35,7 @@
     />
     <meta
       name="twitter:description"
-      content="Build and publish a free website with Codex, GitHub, GitHub Pages, and your own domain."
+      content="Build and publish a free website with Codex, GitHub, GitHub Pages, and your own domain using plain HTML, CSS, and JavaScript."
     />
     <meta
       name="twitter:image"
@@ -73,8 +74,9 @@
             <p class="eyebrow">Step-by-step explainer</p>
             <h1>Build your site. Ship it free. Put your domain on it.</h1>
             <p class="lead">
-              This repo gives people a default no-framework path, plus Astro and
-              Next.js options when they actually need more structure.
+              This repo is built around one clear path: a no-framework website
+              starter you can edit in Codex and publish directly on GitHub
+              Pages.
             </p>
             <div class="hero-actions">
               <a class="button primary" href="#steps">See the steps</a>
@@ -105,7 +107,7 @@
             <div class="hero-stats">
               <div>
                 <strong>01</strong>
-                <span>default stack</span>
+                <span>stack choice</span>
               </div>
               <div>
                 <strong>06</strong>
@@ -123,8 +125,8 @@
       <main>
         <section class="panel" id="stacks">
           <div class="section-heading">
-            <p class="section-label">Choose your stack</p>
-            <h2>Start simpler than you think.</h2>
+            <p class="section-label">Why this setup</p>
+            <h2>One stack. Less friction. Faster shipping.</h2>
           </div>
 
           <div class="stack-grid">
@@ -140,28 +142,28 @@
 
             <article class="stack-card">
               <p class="stack-index">02</p>
-              <h3>Astro</h3>
+              <h3>No install step</h3>
               <p>
-                Use Astro when you want components and cleaner structure, but
-                still want a static site and simple hosting.
+                You can open the repo, change the files, and publish without
+                setting up a framework or build toolchain.
               </p>
-              <span class="chip chip-soft">Upgrade path</span>
+              <span class="chip chip-soft">Simple</span>
             </article>
 
             <article class="stack-card">
               <p class="stack-index">03</p>
-              <h3>Next.js</h3>
+              <h3>GitHub Pages friendly</h3>
               <p>
-                Use Next.js only if React is part of the goal. GitHub Pages
-                means the output must stay static.
+                The whole flow is designed for a static site hosted for free,
+                with a clean path to your own domain.
               </p>
-              <span class="chip chip-dark">Advanced</span>
+              <span class="chip chip-dark">Free hosting</span>
             </article>
           </div>
           <div class="decision-banner">
             <span>Rule of thumb</span>
-            Start with no framework. Move to Astro if structure helps. Reach for
-            Next.js only when React is the actual requirement.
+            Keep the stack boring. Use plain HTML, CSS, and JavaScript so the
+            setup stays teachable, editable, and easy to publish.
           </div>
         </section>
 
@@ -178,8 +180,7 @@
                 <h3>Clone the repo</h3>
                 <p>
                   Start with the repo as-is. If you want the default path, use
-                  the root files. If you want a different stack, run the
-                  generator script.
+                  the root files and edit them directly.
                 </p>
                 <pre><code>git clone https://github.com/danlex/codex-free-website.git
 cd codex-free-website</code></pre>
@@ -189,13 +190,14 @@ cd codex-free-website</code></pre>
             <article class="timeline-step">
               <div class="timeline-number">2</div>
               <div class="timeline-copy">
-                <h3>Pick the simplest starter that fits</h3>
+                <h3>Edit the starter files</h3>
                 <p>
-                  Most people should start with no framework. If needed, run the
-                  wizard and generate an Astro or Next.js version.
+                  Update the content, colors, links, and sections in the plain
+                  HTML, CSS, and JavaScript files.
                 </p>
-                <pre><code>chmod +x scripts/create-site.sh
-./scripts/create-site.sh</code></pre>
+                <pre><code>index.html
+styles.css
+script.js</code></pre>
               </div>
             </article>
 
@@ -220,7 +222,6 @@ cd codex-free-website</code></pre>
                 <h3>Push to GitHub</h3>
                 <p>
                   Create a new repo, commit the files, and push `main`.
-                  Framework-based starters already include a Pages workflow.
                 </p>
                 <pre><code>git init
 git add .
@@ -236,13 +237,13 @@ git push -u origin main</code></pre>
               <div class="timeline-copy">
                 <h3>Enable GitHub Pages</h3>
                 <p>
-                  No-framework sites deploy from the root branch. Astro and
-                  Next.js templates deploy via GitHub Actions.
+                  This repo publishes directly from the root branch with no
+                  build step.
                 </p>
                 <ul class="step-list">
                   <li>Open `Settings` → `Pages`</li>
-                  <li>Choose `Deploy from a branch` for no framework</li>
-                  <li>Choose `GitHub Actions` for Astro or Next.js</li>
+                  <li>Choose `Deploy from a branch`</li>
+                  <li>Select `main` and `/ (root)`</li>
                 </ul>
               </div>
             </article>

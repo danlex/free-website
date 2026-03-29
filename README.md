@@ -7,12 +7,11 @@ Launch a personal website for free with:
 - GitHub Pages for hosting
 - Your own domain name
 
-This repo defaults to a no-framework website starter because that is the fastest path for most people. It also includes optional Astro and Next.js templates for users who want more structure.
+This repo is a no-framework website starter. It is designed to be the fastest path from clone to live site on GitHub Pages with your own domain.
 
 ## What is included
 
 - A one-page no-framework starter
-- Optional Astro and Next.js templates
 - A quick starter for setup and deployment
 - A sample Codex prompt to customize the site
 - LinkedIn launch content
@@ -24,10 +23,7 @@ This repo defaults to a no-framework website starter because that is the fastest
 - `how-it-works.css` - styling for the explainer page
 - `styles.css` - default styling
 - `script.js` - default behavior
-- `scripts/create-site.sh` - optional template selector
 - `templates/no-framework` - plain HTML/CSS/JS starter
-- `templates/astro` - Astro starter for Pages
-- `templates/nextjs` - Next.js static export starter for Pages
 - `QUICKSTART.md` - clone to live domain flow
 - `prompts/first-codex-prompt.md` - prompt to start customizing with Codex
 - `content/linkedin-post.md` - LinkedIn post draft
@@ -36,7 +32,7 @@ This repo defaults to a no-framework website starter because that is the fastest
 ## Fast path
 
 1. Create a new GitHub repo from these files.
-2. Open the explainer page and starter templates
+2. Open the explainer page and the no-framework starter
 3. Push to GitHub
 4. Enable GitHub Pages from the main branch root
 5. Add your custom domain
@@ -45,29 +41,20 @@ Detailed instructions: [QUICKSTART.md](/Users/adan/work/claude/code/codex-free-w
 
 Step-by-step explainer: [how-it-works.html](/Users/adan/work/claude/code/codex-free-website/how-it-works.html)
 
-## Default recommendation
+## Why no framework
 
-- `No framework` is the default recommendation for the fastest path
-- `Astro` is the best middle ground when you want components and structure
-- `Next.js` is for people who specifically want React and accept GitHub Pages static export constraints
-
-## Optional template wizard
-
-If someone wants a different stack:
-
-```bash
-chmod +x scripts/create-site.sh
-./scripts/create-site.sh
-```
-
-Press `Enter` to accept the default `No framework` option, or choose `Astro` or `Next.js`.
+- No install step
+- No build step
+- Works directly with GitHub Pages
+- Easy to edit in Codex
+- Easy to understand and own
 
 ## Suggested first Codex prompt
 
 Use this after opening the repo in Codex:
 
 ```text
-Turn this starter into a personal website for [your name], a [role]. Keep it compatible with GitHub Pages. If this template uses a framework, keep it within static hosting constraints. Update the hero, about section, links, colors, and SEO copy. Add a projects section and make the design feel more specific to my work in [industry].
+Turn this starter into a personal website for [your name], a [role]. Keep it compatible with GitHub Pages and keep it as plain HTML, CSS, and JavaScript. Update the hero, about section, links, colors, and SEO copy. Add a projects section and make the design feel more specific to my work in [industry].
 ```
 
 ## Publish checklist

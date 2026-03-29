@@ -21,30 +21,15 @@ Edit these files:
 
 This is the recommended path for most users because it works with GitHub Pages directly and keeps setup minimal.
 
-## 3. Optional: generate an Astro or Next.js version
+## 3. Customize the site
 
-If you want a framework-based starter instead:
+Open the repo root and start with [prompts/first-codex-prompt.md](/Users/adan/work/claude/code/codex-free-website/prompts/first-codex-prompt.md).
 
-```bash
-chmod +x scripts/create-site.sh
-./scripts/create-site.sh
-```
+Keep it as plain HTML, CSS, and JavaScript so it stays easy to publish on GitHub Pages.
 
-Press `Enter` for `No framework`, or choose `Astro` or `Next.js`. The wizard generates a new project folder, for example `my-site`.
+## 4. Create the GitHub repo
 
-## 4. Customize the site
-
-Open the repo root for the default starter, or open the generated folder if you used the wizard. Start with [prompts/first-codex-prompt.md](/Users/adan/work/claude/code/codex-free-website/prompts/first-codex-prompt.md).
-
-Keep the deployment target in mind:
-
-- `No framework` deploys from the branch root and is the default
-- `Astro` deploys the built `dist` output through GitHub Actions
-- `Next.js` deploys the built `out` output through GitHub Actions
-
-## 5. Create the GitHub repo
-
-From the project you want to publish:
+From the project root:
 
 ```bash
 git init
@@ -55,21 +40,21 @@ git remote add origin https://github.com/your-username/your-repo-name.git
 git push -u origin main
 ```
 
-## 6. Enable GitHub Pages
+## 5. Enable GitHub Pages
 
 In GitHub:
 
 1. Open `Settings`
 2. Open `Pages`
-3. Choose the source that matches your template:
-4. For `No framework`, use `Deploy from a branch`, then select `main` and `/ (root)`
-5. For `Astro` or `Next.js`, use `GitHub Actions`
+3. Under `Build and deployment`, choose `Deploy from a branch`
+4. Select `main` and `/ (root)`
+5. Save
 
 Your site will be published on `https://your-username.github.io/your-repo-name/` unless this is a user site repo named `your-username.github.io`.
 
-## 7. Add your domain
+## 6. Add your domain
 
-1. Rename the relevant `CNAME.example` to `CNAME`
+1. Rename `CNAME.example` to `CNAME`
 2. Replace the placeholder value with your domain, for example:
 
 ```text
@@ -106,20 +91,7 @@ GitHub Pages apex IPv6 addresses:
 
 Then set the custom domain in GitHub Pages settings and enable HTTPS once available.
 
-## 8. Framework-specific notes
-
-For `Astro`:
-
-- Update `site` and `base` in `astro.config.mjs`
-- The included workflow deploys the `dist` folder
-
-For `Next.js`:
-
-- The included config uses static export with `output: "export"`
-- The included workflow deploys the `out` folder
-- Avoid server-only features because GitHub Pages cannot run them
-
-## 9. Use Codex to iterate
+## 7. Use Codex to iterate
 
 Examples:
 
@@ -128,7 +100,7 @@ Examples:
 - "Add a testimonials section and improve mobile spacing."
 - "Make this look more editorial and less startup landing page."
 
-## 10. Share it
+## 8. Share it
 
 Use:
 
@@ -139,6 +111,4 @@ Use:
 
 - Forgetting to rename `CNAME.example`
 - Using a wrong DNS target
-- Choosing Next.js and then relying on server features
-- Forgetting to update `base` settings for framework templates
 - Expecting domain changes to propagate instantly
