@@ -143,20 +143,53 @@
             </div>
           </div>
 
-          <aside class="hero-card">
-            <div class="signal-line"></div>
-            <p class="mini-label">Default recommendation</p>
-            <h2>No framework first.</h2>
-            <p class="mini-note">
-              Most people do not need extra setup to launch a strong personal
-              website. Start with the lowest-friction path and only move up when
-              the site actually asks for more.
-            </p>
-            <ul class="mini-list">
-              <li>No install step</li>
-              <li>No build setup</li>
-              <li>Direct branch deploy on GitHub Pages</li>
-            </ul>
+          <aside class="hero-showcase">
+            <div class="floating-badge">
+              <span class="floating-label">Default path</span>
+              <strong>No framework</strong>
+            </div>
+            <div class="hero-card showcase-window">
+              <div class="showcase-topbar">
+                <div class="traffic-lights">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </div>
+                <p class="showcase-url">danlex.github.io/codex-free-website</p>
+              </div>
+
+              <div class="showcase-body">
+                <div class="showcase-primary">
+                  <div class="signal-line"></div>
+                  <p class="mini-label">Default recommendation</p>
+                  <h2>No framework first.</h2>
+                  <p class="mini-note">
+                    Most people do not need extra setup to launch a strong
+                    personal website. Start with the lowest-friction path and
+                    keep the stack simple.
+                  </p>
+                  <ul class="mini-list">
+                    <li>No install step</li>
+                    <li>No build setup</li>
+                    <li>Direct branch deploy on GitHub Pages</li>
+                  </ul>
+                </div>
+
+                <div class="showcase-secondary">
+                  <div class="terminal-card">
+                    <p class="terminal-label">Quickstart</p>
+                    <pre><code>git clone https://github.com/danlex/codex-free-website.git
+cd codex-free-website
+git push</code></pre>
+                  </div>
+                  <div class="domain-card-mini">
+                    <span class="domain-pill">Custom domain</span>
+                    <p>Add `CNAME`, update DNS, enable HTTPS.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             <div class="hero-stats">
               <div>
                 <strong>01</strong>
@@ -176,6 +209,24 @@
       </header>
 
       <main>
+        <section class="signal-strip">
+          <article class="signal-card">
+            <p class="stack-index">01</p>
+            <h3>Edit plain files</h3>
+            <p>Everything stays in HTML, CSS, and JavaScript so the handoff is easy.</p>
+          </article>
+          <article class="signal-card">
+            <p class="stack-index">02</p>
+            <h3>Publish from root</h3>
+            <p>No build pipeline. Push `main`, enable Pages, and the site goes live.</p>
+          </article>
+          <article class="signal-card">
+            <p class="stack-index">03</p>
+            <h3>Use your domain</h3>
+            <p>GitHub Pages plus a `CNAME` file gives you a clean path to your own URL.</p>
+          </article>
+        </section>
+
         <section class="panel" id="stacks">
           <div class="section-heading">
             <p class="section-label">Why this setup</p>
