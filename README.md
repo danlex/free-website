@@ -19,7 +19,9 @@ This repo defaults to a no-framework website starter because that is the fastest
 
 ## Repo structure
 
-- `index.html` - default no-framework homepage starter
+- `index.html` - main explainer page published on GitHub Pages
+- `how-it-works.html` - duplicate explainer page for reuse/adaptation
+- `how-it-works.css` - styling for the explainer page
 - `styles.css` - default styling
 - `script.js` - default behavior
 - `scripts/create-site.sh` - optional template selector
@@ -34,12 +36,14 @@ This repo defaults to a no-framework website starter because that is the fastest
 ## Fast path
 
 1. Create a new GitHub repo from these files.
-2. Edit the default no-framework starter
+2. Open the explainer page and starter templates
 3. Push to GitHub
 4. Enable GitHub Pages from the main branch root
 5. Add your custom domain
 
 Detailed instructions: [QUICKSTART.md](/Users/adan/work/claude/code/codex-free-website/QUICKSTART.md)
+
+Step-by-step explainer: [how-it-works.html](/Users/adan/work/claude/code/codex-free-website/how-it-works.html)
 
 ## Default recommendation
 
