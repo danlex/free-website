@@ -769,6 +769,72 @@ h3 {
   margin-top: 24px;
 }
 
+.tvl-panel {
+  background:
+    linear-gradient(135deg, rgba(255, 73, 49, 0.05), rgba(255, 255, 255, 0.012)),
+    var(--paper);
+}
+
+.tvl-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(280px, 0.85fr);
+  gap: 22px;
+  align-items: start;
+}
+
+.tvl-copy p {
+  margin: 0;
+  max-width: 58ch;
+  color: var(--muted);
+}
+
+.tvl-copy p + p {
+  margin-top: 16px;
+}
+
+.tvl-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-top: 26px;
+}
+
+.tvl-card {
+  padding: 24px;
+  border-radius: 24px;
+  border: 1px solid var(--line);
+  background:
+    linear-gradient(180deg, rgba(255, 73, 49, 0.04), rgba(255, 255, 255, 0.015)),
+    rgba(255, 255, 255, 0.018);
+}
+
+.tvl-list {
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 12px;
+}
+
+.tvl-list li {
+  padding: 14px 0;
+  border-top: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 600;
+}
+
+.tvl-list li:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+
+.tvl-footnote {
+  margin: 20px 0 0;
+  color: var(--muted);
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
 .cta-strip {
   margin-top: 24px;
   padding: 34px;
@@ -819,7 +885,8 @@ h3 {
   .signal-strip,
   .stack-grid,
   .domain-grid,
-  .check-grid {
+  .check-grid,
+  .tvl-grid {
     grid-template-columns: 1fr;
   }
 
