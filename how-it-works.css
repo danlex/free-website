@@ -355,15 +355,15 @@ h3 {
 }
 
 .hero-showcase {
-  position: relative;
-  padding-top: 22px;
+  display: grid;
+  gap: 14px;
+  align-content: start;
 }
 
 .floating-badge {
-  position: absolute;
-  top: 0;
-  right: 18px;
-  z-index: 2;
+  position: relative;
+  z-index: 1;
+  justify-self: end;
   padding: 14px 16px;
   border-radius: 20px;
   background: linear-gradient(135deg, rgba(255, 73, 49, 0.14), rgba(255, 255, 255, 0.02));
