@@ -4,8 +4,8 @@
   "description": "A no-framework starter for building and publishing a free website with GitHub Pages.",
   "start_url": "/codex-free-website/",
   "display": "standalone",
-  "background_color": "#060816",
-  "theme_color": "#060816",
+  "background_color": "#101010",
+  "theme_color": "#101010",
   "icons": [
     {
       "src": "favicon-192.png",
