@@ -228,8 +228,8 @@ pre {
 
 .hero-grid {
   display: grid;
-  grid-template-columns: minmax(0, 1.1fr) minmax(360px, 0.9fr);
-  gap: 32px;
+  grid-template-columns: minmax(0, 0.96fr) minmax(440px, 1.04fr);
+  gap: 28px;
   padding: 108px 0 48px;
   align-items: end;
 }
@@ -442,8 +442,8 @@ h3 {
 
 .showcase-body {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) 220px;
-  gap: 18px;
+  grid-template-columns: minmax(0, 1fr) 248px;
+  gap: 20px;
   padding-top: 18px;
 }
 
