@@ -1,89 +1,61 @@
 # Codex Free Website
 
-Build and publish a personal website for free with:
-
-- Codex for editing
-- GitHub for version control
-- GitHub Pages for hosting
-- Your own domain for the final URL
+Use this repo to build a simple website for free with Codex and GitHub Pages.
 
 Live site: [danlex.github.io/codex-free-website](https://danlex.github.io/codex-free-website/)
 
 Repo: [github.com/danlex/codex-free-website](https://github.com/danlex/codex-free-website)
 
-## What This Repo Is
-
-This repo has two jobs:
-
-- The repo root publishes a polished explainer site on GitHub Pages.
-- The actual no-framework website starter lives in `templates/no-framework`.
-
-That split is intentional. The explainer helps people understand the flow. The starter folder is the part you copy into your own repo when you want to build your site.
-
 ## Start Here
 
-1. Clone this repo or browse it on GitHub.
-2. Open `templates/no-framework`.
-3. Copy those starter files into your own repo or working folder.
-4. Open that starter in Codex and customize it.
-5. Push to GitHub and enable GitHub Pages.
-6. Add your custom domain when you are ready.
+Most people only need to do 3 things:
 
-If you only want the website template, start from:
+1. Copy `templates/no-framework`
+2. Edit the files in Codex
+3. Push to GitHub Pages
+
+That is the main path.
+
+## Use These Files
+
+The actual starter is here:
 
 - `templates/no-framework/index.html`
 - `templates/no-framework/styles.css`
 - `templates/no-framework/script.js`
 - `templates/no-framework/CNAME.example`
 
-## Repo Layout
+If you want to build your own website, start there.
+
+## What The Rest Of The Repo Is
 
 - `index.html`
-  Published homepage and explainer for the starter.
+  The published explainer homepage for this starter.
 - `how-it-works.html`
-  Secondary explainer page with the same flow and supporting guidance.
-- `how-it-works.css`
-  Shared layout and component system.
-- `home-light.css`
-  Light-theme overrides for the Apple-like white layout with TVL-style branding.
-- `templates/no-framework/`
-  The actual starter you should use for your own website.
+  A second explainer page with the longer walkthrough.
 - `QUICKSTART.md`
-  The shortest path from starter files to GitHub Pages and a custom domain.
+  The detailed setup and publish instructions.
 - `prompts/first-codex-prompt.md`
-  A ready-to-use prompt for customizing the starter in Codex.
+  A ready-made prompt for customizing the starter.
 - `content/`
-  LinkedIn post and slide assets for sharing the project.
+  LinkedIn launch assets.
 
-## Why No Framework
+## Why This Starter Is Simple
 
 - No install step
 - No build step
-- Works directly with GitHub Pages
+- Works directly on GitHub Pages
 - Easy to edit in Codex
-- Easy to hand off or maintain later
-
-If the site is mostly content, links, projects, and contact details, plain HTML, CSS, and JavaScript are usually enough.
+- Easy to maintain later
 
 ## Recommended First Prompt
-
-Use this after opening the starter files in Codex:
 
 ```text
 Turn this starter into a personal website for [name], a [role].
 
-Constraints:
-- Keep it compatible with GitHub Pages
-- Keep it as static HTML, CSS, and JavaScript
-- No framework, no build step
-
-Make these changes:
-- Rewrite all placeholder copy
-- Add a stronger hero section
-- Add 3 projects with believable summaries
-- Update the links and contact section
-- Improve the palette and typography for [industry/style]
-- Tighten mobile spacing
+Keep it compatible with GitHub Pages.
+Keep it as plain HTML, CSS, and JavaScript.
+Rewrite the copy, update the links, improve the design, and add 3 projects.
 ```
 
 ## Documentation
@@ -92,15 +64,6 @@ Make these changes:
 - Explainer page: [how-it-works.html](how-it-works.html)
 - Starter prompt: [prompts/first-codex-prompt.md](prompts/first-codex-prompt.md)
 - GitHub Pages custom domain docs: [Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
-
-## Publish Checklist
-
-- Replace the placeholder content
-- Add your real links and contact info
-- Update the title, description, and social preview image
-- Rename `CNAME.example` to `CNAME` when you need a custom domain
-- Set the domain inside the `CNAME` file
-- Enable GitHub Pages and HTTPS
 
 ## License
 
