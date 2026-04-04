@@ -1,13 +1,29 @@
 # No-Framework Website Starter
 
-This starter uses plain HTML, CSS, and JavaScript so it can be hosted directly on GitHub Pages without a build step.
+This is the actual starter you should use for your own site.
 
-## Run it
+It is intentionally small:
 
-Open `index.html` in your browser or serve the folder with any static file server.
+- `index.html`
+- `styles.css`
+- `script.js`
 
-## Publish it
+## Why This Starter Exists
 
-1. Push the files to GitHub
-2. Enable GitHub Pages from the `main` branch root
-3. Rename `CNAME.example` to `CNAME` when you are ready to use your domain
+- No install step
+- No build step
+- Works directly with GitHub Pages
+- Easy to customize in Codex
+- Easy to maintain later
+
+## Use It
+
+1. Copy these files into the root of your own repo or project folder.
+2. Update the copy, links, sections, colors, and metadata.
+3. Push to GitHub.
+4. Enable GitHub Pages from the `main` branch root.
+5. Rename `CNAME.example` to `CNAME` when you are ready to use your domain.
+
+For the full walkthrough, go back to:
+
+- [QUICKSTART.md](../../QUICKSTART.md)

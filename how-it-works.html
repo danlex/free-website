@@ -3,18 +3,18 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>How It Works | Codex Free Website</title>
+    <title>How It Works | Free Website Starter for Codex + GitHub Pages</title>
     <meta
       name="description"
-      content="A step-by-step explainer for building and publishing a free website with Codex, GitHub, GitHub Pages, and your own domain."
+      content="A step-by-step explainer for using the no-framework website starter in templates/no-framework, publishing on GitHub Pages, and connecting your own domain."
     />
     <meta name="robots" content="noindex,follow" />
     <link rel="canonical" href="https://danlex.github.io/codex-free-website/" />
-    <meta name="theme-color" content="#101010" />
+    <meta name="theme-color" content="#f5f5f7" />
     <meta property="og:title" content="How It Works | Codex Free Website" />
     <meta
       property="og:description"
-      content="Build and publish a free website with Codex, GitHub, GitHub Pages, and your own domain using plain HTML, CSS, and JavaScript."
+      content="Use the no-framework website starter in templates/no-framework, customize it in Codex, publish it on GitHub Pages, and connect your own domain."
     />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://danlex.github.io/codex-free-website/how-it-works.html" />
@@ -26,12 +26,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="how-it-works.css" />
+    <link rel="stylesheet" href="home-light.css" />
   </head>
-  <body>
+  <body class="home-apple docs-page">
     <div class="background-grid"></div>
     <div class="background-orb orb-one"></div>
     <div class="background-orb orb-two"></div>
@@ -42,29 +43,32 @@
         <nav class="topbar">
           <a class="brand" href="#top">CODEX FREE WEBSITE</a>
           <div class="nav-links">
-            <a href="#stacks">Stacks</a>
+            <a href="#stacks">Starter</a>
             <a href="#steps">Steps</a>
             <a href="#domain">Domain</a>
             <a href="#publish">Publish</a>
+            <a href="https://github.com/danlex/codex-free-website">GitHub</a>
           </div>
         </nav>
 
         <div class="hero-grid" id="top">
           <div class="hero-copy">
             <p class="eyebrow">Step-by-step explainer</p>
-            <h1>Build your site. Ship it free. Put your domain on it.</h1>
+            <h1>Use the explainer to understand the flow. Build from the starter folder.</h1>
             <p class="lead">
-              This repo is built around one clear path: a no-framework website
-              starter you can edit in Codex and publish directly on GitHub
-              Pages.
+              The root site shows how the system works. The actual website
+              starter lives in <code>templates/no-framework</code>, where you
+              can edit plain HTML, CSS, and JavaScript and publish directly on
+              GitHub Pages.
             </p>
             <div class="hero-actions">
-              <a class="button primary" href="#steps">See the steps</a>
-              <a class="button secondary" href="#publish">Publish checklist</a>
+              <a class="button primary" href="https://github.com/danlex/codex-free-website/tree/main/templates/no-framework">Open starter files</a>
+              <a class="button secondary" href="#steps">See the steps</a>
+              <a class="button tertiary" href="QUICKSTART.md">Read quickstart</a>
             </div>
             <div class="hero-meta">
-              <div class="meta-pill">Codex</div>
-              <div class="meta-pill">GitHub</div>
+              <div class="meta-pill">No build step</div>
+              <div class="meta-pill">Plain HTML</div>
               <div class="meta-pill">GitHub Pages</div>
               <div class="meta-pill">Custom Domain</div>
             </div>
@@ -72,29 +76,29 @@
 
           <aside class="hero-card">
             <div class="signal-line"></div>
-            <p class="mini-label">Default recommendation</p>
-            <h2>No framework first.</h2>
+            <p class="mini-label">The repo split</p>
+            <h2>Read the root. Build from <code>templates/no-framework</code>.</h2>
             <p class="mini-note">
-              Most people do not need extra setup to launch a strong personal
-              website. Start with the lowest-friction path and only move up when
-              the site actually asks for more.
+              That keeps the public explainer and your own website template
+              separate, which makes the system easier to understand and easier
+              to customize.
             </p>
             <ul class="mini-list">
-              <li>No install step</li>
-              <li>No build setup</li>
-              <li>Direct branch deploy on GitHub Pages</li>
+              <li><strong>Root</strong><span>Published explainer and docs</span></li>
+              <li><strong>Starter</strong><span><code>index.html</code>, <code>styles.css</code>, <code>script.js</code></span></li>
+              <li><strong>Outcome</strong><span>Clean clone-to-pages workflow</span></li>
             </ul>
             <div class="hero-stats">
               <div>
-                <strong>01</strong>
-                <span>stack choice</span>
+                <strong>3</strong>
+                <span>starter files</span>
               </div>
               <div>
                 <strong>06</strong>
                 <span>core steps</span>
               </div>
               <div>
-                <strong>0$</strong>
+                <strong>$0</strong>
                 <span>hosting cost</span>
               </div>
             </div>
@@ -105,39 +109,40 @@
       <main>
         <section class="panel" id="stacks">
           <div class="section-heading">
-            <p class="section-label">Why this setup</p>
-            <h2>One stack. Less friction. Faster shipping.</h2>
+            <p class="section-label">How the repo works</p>
+            <h2>Understand the published site and the starter in one pass.</h2>
           </div>
 
           <div class="stack-grid">
             <article class="stack-card featured">
               <p class="stack-index">01</p>
-              <h3>No framework</h3>
+              <h3>Root = explainer</h3>
               <p>
-                Best for most users. Edit HTML, CSS, and JavaScript directly.
-                Push to GitHub. Enable Pages. Done.
+                The root files power the live GitHub Pages site and explain how
+                to use the repo without dropping you into framework setup.
               </p>
-              <span class="chip">Default</span>
+              <span class="chip">Live site</span>
             </article>
 
             <article class="stack-card">
               <p class="stack-index">02</p>
-              <h3>No install step</h3>
+              <h3>Starter = template</h3>
               <p>
-                You can open the repo, change the files, and publish without
-                setting up a framework or build toolchain.
+                The site you customize for yourself is inside
+                <code>templates/no-framework</code>. It stays intentionally
+                small so shipping feels straightforward.
               </p>
-              <span class="chip chip-soft">Simple</span>
+              <span class="chip chip-soft">Starter</span>
             </article>
 
             <article class="stack-card">
               <p class="stack-index">03</p>
-              <h3>GitHub Pages friendly</h3>
+              <h3>Docs = support</h3>
               <p>
-                The whole flow is designed for a static site hosted for free,
-                with a clean path to your own domain.
+                The quickstart, prompt, and launch assets help you go from repo
+                structure to a real published site with less guesswork.
               </p>
-              <span class="chip chip-dark">Free hosting</span>
+              <span class="chip chip-dark">Included</span>
             </article>
           </div>
           <div class="decision-banner">
@@ -157,25 +162,28 @@
             <article class="timeline-step">
               <div class="timeline-number">1</div>
               <div class="timeline-copy">
-                <h3>Clone the repo</h3>
+                <h3>Clone the repo to inspect the system</h3>
                 <p>
-                  Start with the repo as-is. If you want the default path, use
-                  the root files and edit them directly.
+                  Start by reviewing the explainer, the starter folder, and the
+                  quickstart so you know exactly which files belong to your own
+                  site.
                 </p>
-                <pre><code>git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name</code></pre>
+                <pre><code>git clone https://github.com/danlex/codex-free-website.git
+cd codex-free-website</code></pre>
               </div>
             </article>
 
             <article class="timeline-step">
               <div class="timeline-number">2</div>
               <div class="timeline-copy">
-                <h3>Edit the starter files</h3>
+                <h3>Use the starter folder</h3>
                 <p>
-                  Update the content, colors, links, and sections in the plain
-                  HTML, CSS, and JavaScript files.
+                  Copy the files from <code>templates/no-framework</code> into
+                  your own repo or working directory. That is the starting
+                  point for your website.
                 </p>
-                <pre><code>index.html
+                <pre><code>templates/no-framework/
+  index.html
 styles.css
 script.js</code></pre>
               </div>
@@ -186,12 +194,13 @@ script.js</code></pre>
               <div class="timeline-copy">
                 <h3>Open it in Codex and customize</h3>
                 <p>
-                  Rewrite the copy, change the colors, add your links, and make
-                  the site feel specific to the person using it.
+                  Rewrite the copy, change the sections, update the links, and
+                  make the design feel specific to the person using it.
                 </p>
                 <p class="inline-note">
-                  Good prompt: “Turn this into a personal website for [name], a
-                  [role]. Keep it compatible with GitHub Pages.”
+                  Good prompt: “Turn this starter into a personal website for
+                  [name], a [role]. Update the hero, about section, projects,
+                  links, and SEO copy. Keep it compatible with GitHub Pages.”
                 </p>
               </div>
             </article>
@@ -201,7 +210,8 @@ script.js</code></pre>
               <div class="timeline-copy">
                 <h3>Push to GitHub</h3>
                 <p>
-                  Create a new repo, commit the files, and push `main`.
+                  Create a new repo with the starter files, commit them, and
+                  push <code>main</code>.
                 </p>
                 <pre><code>git init
 git add .
@@ -217,13 +227,13 @@ git push -u origin main</code></pre>
               <div class="timeline-copy">
                 <h3>Enable GitHub Pages</h3>
                 <p>
-                  This repo publishes directly from the root branch with no
-                  build step.
+                  Your own starter site can publish directly from the root
+                  branch with no build step.
                 </p>
                 <ul class="step-list">
-                  <li>Open `Settings` → `Pages`</li>
-                  <li>Choose `Deploy from a branch`</li>
-                  <li>Select `main` and `/ (root)`</li>
+                  <li>Open <code>Settings</code> → <code>Pages</code></li>
+                  <li>Choose <code>Deploy from a branch</code></li>
+                  <li>Select <code>main</code> and <code>/ (root)</code></li>
                 </ul>
               </div>
             </article>
@@ -233,8 +243,9 @@ git push -u origin main</code></pre>
               <div class="timeline-copy">
                 <h3>Connect the custom domain</h3>
                 <p>
-                  Rename `CNAME.example` to `CNAME`, put the domain in the file,
-                  update DNS, then enable HTTPS in GitHub Pages.
+                  Rename <code>CNAME.example</code> to <code>CNAME</code>, put
+                  the domain in the file, update DNS, then enable HTTPS in
+                  GitHub Pages.
                 </p>
               </div>
             </article>
@@ -251,16 +262,18 @@ git push -u origin main</code></pre>
             <article class="domain-card">
               <h3>Subdomain</h3>
               <p>
-                For `www.yourdomain.com`, add a `CNAME` record pointing `www` to
-                `your-username.github.io`.
+                For <code>www.yourdomain.com</code>, add a <code>CNAME</code>
+                record pointing <code>www</code> to
+                <code>your-username.github.io</code>.
               </p>
             </article>
 
             <article class="domain-card">
               <h3>Apex domain</h3>
               <p>
-                For `yourdomain.com`, add GitHub Pages `A` records and, if you
-                want, `AAAA` records for IPv6.
+                For <code>yourdomain.com</code>, add GitHub Pages
+                <code>A</code> records and, if you want, <code>AAAA</code>
+                records for IPv6.
               </p>
             </article>
 
@@ -281,12 +294,12 @@ git push -u origin main</code></pre>
           </div>
 
           <div class="check-grid">
-            <div class="check-item">Replace placeholder copy</div>
+            <div class="check-item">Replace placeholder copy and sections</div>
+            <div class="check-item">Use <code>templates/no-framework</code> as the starter source</div>
             <div class="check-item">Add real links and contact info</div>
-            <div class="check-item">Rename `CNAME.example` when needed</div>
-            <div class="check-item">Set the domain inside the `CNAME` file</div>
-            <div class="check-item">Enable GitHub Pages</div>
-            <div class="check-item">Add the repo link to the LinkedIn assets</div>
+            <div class="check-item">Rename <code>CNAME.example</code> when needed</div>
+            <div class="check-item">Set the domain inside the <code>CNAME</code> file</div>
+            <div class="check-item">Enable GitHub Pages and HTTPS</div>
           </div>
         </section>
 
@@ -304,9 +317,9 @@ git push -u origin main</code></pre>
                 clear, usable systems that teams can actually ship.
               </p>
               <p>
-                That same thinking shaped this starter: keep the stack simple,
-                reduce setup friction, and help people move from blank repo to
-                live website fast.
+                That same lens shaped this repo: strong editorial hierarchy,
+                deliberate constraint, and a product flow that removes
+                ambiguity instead of adding more tooling.
               </p>
               <div class="tvl-actions">
                 <a class="button primary" href="https://www.tvl.tech/">Visit TVL Tech</a>
@@ -337,8 +350,7 @@ git push -u origin main</code></pre>
           <p class="cta-kicker">Built for a clear starting point</p>
           <h2>Clone it. Customize it. Publish it.</h2>
           <p>
-            Use the explainer page, the quickstart, and the repo templates
-            together.
+            Use the explainer, the quickstart, and the starter folder together.
           </p>
         </section>
       </main>

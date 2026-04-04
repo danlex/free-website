@@ -1,6 +1,6 @@
 .home-apple {
   color: #101010;
-  background: linear-gradient(180deg, #ffffff 0%, #fbfbfc 48%, #f5f5f7 100%);
+  background: linear-gradient(180deg, #ffffff 0%, #fbfbfc 42%, #f5f5f7 100%);
 }
 
 .home-apple .background-grid {
@@ -52,23 +52,26 @@
 .home-apple .topbar {
   height: 52px;
   padding: 8px 24px;
-  background: rgba(255, 255, 255, 0.72);
-  border-bottom: 1px solid rgba(16, 16, 16, 0.08);
+  background: rgba(16, 16, 16, 0.96);
+  border-bottom: 1px solid rgba(255, 73, 49, 0.18);
   backdrop-filter: blur(24px);
+  box-shadow: 0 10px 30px rgba(16, 16, 16, 0.08);
 }
 
 .home-apple .brand {
-  color: #101010;
+  color: #ffffff;
 }
 
 .home-apple .nav-links a {
-  color: #55555d;
-  border-color: rgba(16, 16, 16, 0.08);
-  background: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.72);
+  border-color: rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.04);
 }
 
 .home-apple .nav-links a:hover {
-  color: #ffffff;
+  color: #101010;
+  background: #ff4931;
+  border-color: #ff4931;
 }
 
 .home-apple .hero-grid {
@@ -86,7 +89,7 @@
 
 .home-apple h1 {
   font-size: clamp(4rem, 8vw, 7.2rem);
-  max-width: 7.4ch;
+  max-width: 8.2ch;
   letter-spacing: -0.065em;
 }
 
@@ -120,12 +123,12 @@
 .home-apple .mini-note,
 .home-apple .tvl-copy p,
 .home-apple .cta-strip p {
-  color: #5f6168;
+  color: #575b62;
 }
 
 .home-apple .lead {
   max-width: 48ch;
-  font-size: 1.12rem;
+  font-size: 1.08rem;
 }
 
 .home-apple .hero-meta {
@@ -134,8 +137,8 @@
 
 .home-apple .meta-pill {
   color: #6c3a31;
-  border-color: rgba(255, 73, 49, 0.12);
-  background: rgba(255, 73, 49, 0.06);
+  border-color: rgba(255, 73, 49, 0.16);
+  background: rgba(255, 73, 49, 0.05);
 }
 
 .home-apple .button {
@@ -152,7 +155,7 @@
 .home-apple .button.secondary,
 .home-apple .button.tertiary {
   color: #101010;
-  background: rgba(255, 255, 255, 0.76);
+  background: rgba(255, 255, 255, 0.88);
   border-color: rgba(16, 16, 16, 0.08);
 }
 
@@ -172,8 +175,8 @@
 .home-apple .tvl-card {
   border-radius: 32px;
   border: 1px solid rgba(16, 16, 16, 0.08);
-  background: rgba(255, 255, 255, 0.84);
-  box-shadow: 0 24px 64px rgba(16, 16, 16, 0.06);
+  background: rgba(255, 255, 255, 0.92);
+  box-shadow: 0 24px 64px rgba(16, 16, 16, 0.05);
 }
 
 .home-apple .hero-card:hover,
@@ -189,7 +192,7 @@
 
 .home-apple .showcase-window {
   padding: 24px;
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(247, 247, 249, 0.96));
+  background: linear-gradient(180deg, rgba(255, 255, 255, 1), rgba(247, 247, 249, 0.97));
 }
 
 .home-apple .showcase-topbar {
@@ -226,9 +229,21 @@
 }
 
 .home-apple .showcase-primary h2 {
-  max-width: 8ch;
-  font-size: clamp(2.6rem, 4vw, 4.3rem);
-  line-height: 0.94;
+  max-width: 10ch;
+  font-size: clamp(2.4rem, 4vw, 4rem);
+  line-height: 0.96;
+}
+
+.home-apple h1 code,
+.home-apple h2 code {
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #ff4931;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
 }
 
 .home-apple .signal-line {
@@ -247,10 +262,23 @@
 }
 
 .home-apple .mini-list li {
+  display: grid;
+  gap: 8px;
   padding: 14px 16px;
   border-radius: 20px;
   border: 1px solid rgba(16, 16, 16, 0.06);
   background: #f5f5f7;
+}
+
+.home-apple .mini-list li strong {
+  font-size: 0.92rem;
+  line-height: 1.25;
+}
+
+.home-apple .mini-list li span {
+  color: #5f6168;
+  font-size: 0.94rem;
+  line-height: 1.5;
 }
 
 .home-apple .showcase-secondary {
@@ -313,14 +341,15 @@
 
 .home-apple .section-heading {
   display: grid;
-  justify-items: center;
-  text-align: center;
+  justify-items: start;
+  text-align: left;
   gap: 10px;
   margin-bottom: 32px;
+  max-width: 760px;
 }
 
 .home-apple .section-label {
-  justify-content: center;
+  justify-content: flex-start;
 }
 
 .home-apple .section-label::after {
@@ -350,9 +379,13 @@
 
 .home-apple .decision-banner {
   border-radius: 28px;
-  background: #fff4f1;
+  background: #101010;
   border: 1px solid rgba(255, 73, 49, 0.12);
-  color: #553830;
+  color: rgba(255, 255, 255, 0.86);
+}
+
+.home-apple .decision-banner span {
+  color: #ff8d79;
 }
 
 .home-apple .timeline {
@@ -403,6 +436,18 @@
   margin-top: 28px;
 }
 
+.home-apple .resource-link {
+  display: inline-flex;
+  margin-top: 18px;
+  color: #101010;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home-apple .resource-link:hover {
+  color: #ff4931;
+}
+
 .home-apple .tvl-grid {
   grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
   gap: 20px;
@@ -419,15 +464,36 @@
 .home-apple .cta-strip {
   padding: 56px 48px;
   border-radius: 40px;
-  background: linear-gradient(180deg, #fff4f1 0%, rgba(255, 255, 255, 0.95) 100%);
-  border: 1px solid rgba(255, 73, 49, 0.12);
-  box-shadow: 0 24px 64px rgba(16, 16, 16, 0.06);
+  background: linear-gradient(180deg, #101010 0%, #1c1c1f 100%);
+  border: 1px solid rgba(255, 73, 49, 0.14);
+  box-shadow: 0 24px 64px rgba(16, 16, 16, 0.08);
   text-align: center;
+}
+
+.home-apple .cta-strip h2 {
+  color: #ffffff;
+}
+
+.home-apple .cta-kicker,
+.home-apple .cta-strip p {
+  color: rgba(255, 255, 255, 0.7);
 }
 
 .home-apple .cta-strip p {
   margin-left: auto;
   margin-right: auto;
+}
+
+.home-apple.docs-page .hero-grid {
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.82fr);
+}
+
+.home-apple.docs-page .hero-card {
+  padding: 28px;
+}
+
+.home-apple.docs-page .hero-card .mini-list {
+  grid-template-columns: 1fr;
 }
 
 @media (max-width: 1180px) {
@@ -453,7 +519,8 @@
     grid-template-columns: 1fr;
   }
 
-  .home-apple .mini-list {
+  .home-apple .mini-list,
+  .home-apple .resource-grid {
     grid-template-columns: 1fr;
   }
 }

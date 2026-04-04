@@ -1,40 +1,53 @@
-# Quick Starter
+# Quickstart
 
-This is the shortest path from clone to live site.
+This is the shortest path from this repo to your own live website.
 
-## 1. Clone and open in Codex
+## 1. Understand the repo split
+
+This repo has two parts:
+
+- The repo root publishes the explainer site on GitHub Pages.
+- The website starter you should customize lives in `templates/no-framework`.
+
+If you want your own site, start from `templates/no-framework`.
+
+## 2. Copy the starter into your own project
+
+Create a new folder or repo for your site, then copy these files from `templates/no-framework` into its root:
+
+- `index.html`
+- `styles.css`
+- `script.js`
+- `CNAME.example`
+
+If you are on macOS or Linux, one option is:
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
-cd your-repo-name
+git clone https://github.com/danlex/codex-free-website.git
+cd codex-free-website
+mkdir ../your-site
+cp -R templates/no-framework/. ../your-site/
+cd ../your-site
 ```
 
-Open the folder in Codex.
+## 3. Open the starter in Codex
 
-## 2. Start with the default no-framework site
-
-Edit these files:
+Start with:
 
 - `index.html` for content and sections
-- `styles.css` for colors, spacing, and layout
-- `script.js` for small interactions
+- `styles.css` for layout, spacing, colors, and type
+- `script.js` for small interactions only
 
-This is the recommended path for most users because it works with GitHub Pages directly and keeps setup minimal.
+Then use the starter prompt in [prompts/first-codex-prompt.md](prompts/first-codex-prompt.md).
 
-## 3. Customize the site
+## 4. Initialize your own GitHub repo
 
-Open the repo root and start with [prompts/first-codex-prompt.md](/Users/adan/work/claude/code/codex-free-website/prompts/first-codex-prompt.md).
-
-Keep it as plain HTML, CSS, and JavaScript so it stays easy to publish on GitHub Pages.
-
-## 4. Create the GitHub repo
-
-From the project root:
+From your new website folder:
 
 ```bash
 git init
 git add .
-git commit -m "Initial website starter"
+git commit -m "Initial website"
 git branch -M main
 git remote add origin https://github.com/your-username/your-repo-name.git
 git push -u origin main
@@ -50,65 +63,49 @@ In GitHub:
 4. Select `main` and `/ (root)`
 5. Save
 
-Your site will be published on `https://your-username.github.io/your-repo-name/` unless this is a user site repo named `your-username.github.io`.
+Your site will publish to:
 
-## 6. Add your domain
+- `https://your-username.github.io/your-repo-name/`
+
+If the repo name is `your-username.github.io`, it becomes a user site and publishes at the root domain instead.
+
+## 6. Add your custom domain
 
 1. Rename `CNAME.example` to `CNAME`
-2. Replace the placeholder value with your domain, for example:
+2. Put your domain in the file, for example:
 
 ```text
 www.yourdomain.com
 ```
 
-3. Commit and push the change
-4. Verify the domain in GitHub if you want the safer setup GitHub recommends
-5. In your domain provider DNS settings:
+3. Commit and push
+4. Set the custom domain in GitHub Pages settings
+5. Enable HTTPS once GitHub offers it
 
-For a subdomain such as `www`:
+For current DNS guidance, use GitHub’s official docs:
 
-- Add a `CNAME` record pointing `www` to `your-username.github.io`
+- [Configuring a custom domain for your GitHub Pages site](https://docs.github.com/articles/setting-up-a-custom-domain-with-github-pages)
+- [Managing a custom domain for your GitHub Pages site](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/managing-a-custom-domain-for-your-github-pages-site)
 
-For an apex domain such as `yourdomain.com`:
-
-- Add `A` records pointing to GitHub Pages IPs
-- Optionally add `AAAA` records for IPv6 support
-- Optionally redirect apex to `www` at your registrar
-
-GitHub Pages apex IPs:
-
-- `185.199.108.153`
-- `185.199.109.153`
-- `185.199.110.153`
-- `185.199.111.153`
-
-GitHub Pages apex IPv6 addresses:
-
-- `2606:50c0:8000::153`
-- `2606:50c0:8001::153`
-- `2606:50c0:8002::153`
-- `2606:50c0:8003::153`
-
-Then set the custom domain in GitHub Pages settings and enable HTTPS once available.
-
-## 7. Use Codex to iterate
+## 7. Iterate in Codex
 
 Examples:
 
-- "Turn this into a portfolio site for a product designer."
-- "Rewrite the copy so it sounds more direct and less generic."
-- "Add a testimonials section and improve mobile spacing."
-- "Make this look more editorial and less startup landing page."
+- `Turn this into a portfolio site for a product designer.`
+- `Rewrite the copy so it sounds more direct and less generic.`
+- `Add a projects section and improve mobile spacing.`
+- `Make it feel more editorial and less like a generic landing page.`
 
 ## 8. Share it
 
 Use:
 
-- [content/linkedin-post.md](/Users/adan/work/claude/code/codex-free-website/content/linkedin-post.md)
-- [content/linkedin-slides.md](/Users/adan/work/claude/code/codex-free-website/content/linkedin-slides.md)
+- [content/linkedin-post.md](content/linkedin-post.md)
+- [content/linkedin-slides.md](content/linkedin-slides.md)
 
 ## Common mistakes
 
+- Editing the explainer in the repo root instead of the starter in `templates/no-framework`
 - Forgetting to rename `CNAME.example`
-- Using a wrong DNS target
-- Expecting domain changes to propagate instantly
+- Expecting DNS changes to propagate instantly
+- Publishing before replacing placeholder copy and links
