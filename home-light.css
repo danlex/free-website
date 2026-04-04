@@ -50,7 +50,8 @@
 }
 
 .home-apple .topbar {
-  height: 52px;
+  min-height: 52px;
+  height: auto;
   padding: 8px 24px;
   background: rgba(16, 16, 16, 0.96);
   border-bottom: 1px solid rgba(255, 73, 49, 0.18);
@@ -66,12 +67,23 @@
   color: rgba(255, 255, 255, 0.72);
   border-color: rgba(255, 255, 255, 0.12);
   background: rgba(255, 255, 255, 0.04);
+  white-space: nowrap;
 }
 
 .home-apple .nav-links a:hover {
   color: #101010;
   background: #ff4931;
   border-color: #ff4931;
+}
+
+.home-apple .nav-links {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.home-apple .nav-links::-webkit-scrollbar {
+  display: none;
 }
 
 .home-apple .hero-grid {
@@ -525,16 +537,24 @@
   }
 }
 
-@media (max-width: 720px) {
-  .home-apple .page-shell {
-    width: min(calc(100% - 24px), 1360px);
-  }
-
+@media (max-width: 1040px) {
   .home-apple .topbar {
     height: auto;
     grid-template-columns: 1fr;
     gap: 10px;
     padding: 12px 18px;
+  }
+
+  .home-apple .nav-links {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    overflow-x: visible;
+  }
+}
+
+@media (max-width: 720px) {
+  .home-apple .page-shell {
+    width: min(calc(100% - 24px), 1360px);
   }
 
   .home-apple .nav-links {
