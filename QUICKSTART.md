@@ -29,6 +29,16 @@ Update the hero, about section, projects, contact links, and SEO copy.
 Keep it plain HTML, CSS, and JavaScript.
 ```
 
+If you are using Codex, you can also generate images directly.
+
+Example:
+
+```text
+Generate a clean hero image for a landing page about [business or product].
+Style: modern, minimal, premium, white background with warm orange accents.
+Format: wide website hero image.
+```
+
 ## 4. Push
 
 ```bash
