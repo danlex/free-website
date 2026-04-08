@@ -1,5 +1,8 @@
 # Codex Free Website
 
+Repo: [github.com/danlex/codex-free-website](https://github.com/danlex/codex-free-website)
+Live site: [danlex.github.io/codex-free-website](https://danlex.github.io/codex-free-website/)
+
 ## 1. Make your own copy on GitHub
 
 Open [github.com/danlex/codex-free-website](https://github.com/danlex/codex-free-website) and click `Use this template`.
