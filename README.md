@@ -1,15 +1,20 @@
 # Codex Free Website
 
-## Clone
+## 1. Make your own copy on GitHub
+
+Open [github.com/danlex/codex-free-website](https://github.com/danlex/codex-free-website) and click `Use this template`.
+If you do not see it, fork the repo instead.
+
+## 2. Clone your repo
 
 ```bash
-git clone https://github.com/danlex/codex-free-website.git
-cd codex-free-website
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
 ```
 
-## Open it in Codex or Claude Code
+## 3. Open it in Codex or Claude Code
 
-Use your coding agent to edit the root files:
+Edit the root files:
 
 - `index.html`
 - `styles.css`
@@ -24,7 +29,7 @@ Update the hero, about section, projects, contact links, and SEO copy.
 Keep it plain HTML, CSS, and JavaScript.
 ```
 
-## Publish
+## 4. Push and publish
 
 1. Push to GitHub
 2. Enable GitHub Pages

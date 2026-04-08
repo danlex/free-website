@@ -443,6 +443,35 @@
   color: #553830;
 }
 
+.home-apple .step-result {
+  border-color: rgba(16, 16, 16, 0.08);
+  background: #f7f7f9;
+  color: #4d5157;
+}
+
+.home-apple .step-result strong {
+  color: #c63c28;
+}
+
+.home-apple .screenshot-placeholder {
+  border-color: rgba(255, 73, 49, 0.22);
+  background:
+    linear-gradient(180deg, rgba(255, 73, 49, 0.05), rgba(255, 255, 255, 0.96)),
+    #ffffff;
+}
+
+.home-apple .screenshot-placeholder span {
+  color: #5f6168;
+}
+
+.home-apple .domain-proof {
+  margin-top: 22px;
+}
+
+.home-apple .simple-note p {
+  color: #575b62;
+}
+
 .home-apple .check-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 16px;

@@ -774,8 +774,50 @@ h3 {
   color: #ffe2dd;
 }
 
+.step-result {
+  margin-top: 18px;
+  padding: 14px 16px;
+  border-radius: 16px;
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.025);
+  color: #efe9e1;
+}
+
+.step-result strong {
+  color: var(--accent);
+}
+
+.screenshot-placeholder {
+  display: grid;
+  gap: 8px;
+  margin-top: 18px;
+  padding: 18px;
+  border-radius: 18px;
+  border: 1px dashed rgba(255, 255, 255, 0.2);
+  background:
+    linear-gradient(180deg, rgba(255, 73, 49, 0.03), rgba(255, 255, 255, 0.01)),
+    rgba(255, 255, 255, 0.015);
+}
+
+.screenshot-placeholder strong {
+  color: var(--accent);
+  font-family: var(--mono);
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.screenshot-placeholder span {
+  color: var(--muted);
+  line-height: 1.65;
+}
+
 .domain-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.domain-proof {
+  margin-top: 20px;
 }
 
 .publish-panel h2 {
@@ -802,6 +844,19 @@ h3 {
   background:
     linear-gradient(135deg, rgba(255, 73, 49, 0.05), rgba(255, 255, 255, 0.012)),
     var(--paper);
+}
+
+.simple-note {
+  padding: 34px;
+}
+
+.simple-note h2 {
+  max-width: 14ch;
+}
+
+.simple-note p {
+  max-width: 60ch;
+  color: var(--muted);
 }
 
 .tvl-grid {

@@ -1,13 +1,18 @@
 # Quickstart
 
-## 1. Clone the repo
+## 1. Make your own copy on GitHub
+
+Open [github.com/danlex/codex-free-website](https://github.com/danlex/codex-free-website) and click `Use this template`.
+If you do not see it, fork the repo instead.
+
+## 2. Clone your repo
 
 ```bash
-git clone https://github.com/danlex/codex-free-website.git
-cd codex-free-website
+git clone https://github.com/your-username/your-repo-name.git
+cd your-repo-name
 ```
 
-## 2. Open it in Codex or Claude Code
+## 3. Open it in Codex or Claude Code
 
 Edit the root files:
 
@@ -24,7 +29,7 @@ Update the hero, about section, projects, contact links, and SEO copy.
 Keep it plain HTML, CSS, and JavaScript.
 ```
 
-## 3. Push
+## 4. Push
 
 ```bash
 git add .
@@ -32,7 +37,7 @@ git commit -m "Customize website"
 git push
 ```
 
-## 4. Enable Pages
+## 5. Enable Pages
 
 In GitHub:
 
@@ -41,11 +46,12 @@ In GitHub:
 3. Choose `Deploy from a branch`
 4. Select `main` and `/ (root)`
 
-## 5. Add your domain
+## 6. Add your domain
 
-1. Rename `CNAME.example` to `CNAME`
-2. Put your domain in the file
-3. Commit and push
+1. In GitHub, open `Settings` > `Pages` and enter your custom domain
+2. Optionally rename `CNAME.example` to `CNAME` so the domain stays in the repo
+3. Update your DNS records
+4. Wait for GitHub to enable HTTPS
 
 Docs:
 
