@@ -2,8 +2,8 @@
 
 This guide is the screenshot-first path from template to live site.
 
-- Repo: [github.com/danlex/codex-free-website](https://github.com/danlex/codex-free-website)
-- Live site: [danlex.github.io/codex-free-website](https://danlex.github.io/codex-free-website/)
+- Repo: [github.com/danlex/free-website](https://github.com/danlex/free-website)
+- Live site: [danlex.github.io/free-website](https://danlex.github.io/free-website/)
 
 ## 1. Use This Template on GitHub
 
@@ -17,11 +17,11 @@ If template mode is not enabled, fork the repo instead.
 If you keep the same repo name, the command will usually look like this:
 
 ```bash
-git clone https://github.com/your-username/codex-free-website.git
-cd codex-free-website
+git clone https://github.com/your-username/free-website.git
+cd free-website
 ```
 
-If you renamed the repo, replace `codex-free-website` with your repo name.
+If you renamed the repo, replace `free-website` with your repo name.
 
 ![Screenshot 2](assets/screenshots/02-clone-repository.svg)
 

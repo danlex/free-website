@@ -2,14 +2,14 @@
 
 Build a free website with AI using Codex and GitHub Pages.
 
-- Use This Template: [github.com/danlex/codex-free-website](https://github.com/danlex/codex-free-website)
-- Live site: [danlex.github.io/codex-free-website](https://danlex.github.io/codex-free-website/)
+- Use This Template: [github.com/danlex/free-website](https://github.com/danlex/free-website)
+- Live site: [danlex.github.io/free-website](https://danlex.github.io/free-website/)
 - Screenshot guide: [QUICKSTART.md](QUICKSTART.md)
 
 ## The one path
 
 1. Use This Template on GitHub
-2. Clone your fork or copy of `codex-free-website`
+2. Clone your fork or copy of `free-website`
 3. Open the repo in Codex
 4. Use one of the prompt recipes in [`prompts/`](prompts/)
 5. Preview locally
@@ -25,11 +25,11 @@ If template mode is not enabled on GitHub, fork the repo instead.
 If you keep the same repo name, the clone command will usually look like this:
 
 ```bash
-git clone https://github.com/your-username/codex-free-website.git
-cd codex-free-website
+git clone https://github.com/your-username/free-website.git
+cd free-website
 ```
 
-If you renamed the repo, replace `codex-free-website` with your repo name.
+If you renamed the repo, replace `free-website` with your repo name.
 
 ## Use Codex
 
