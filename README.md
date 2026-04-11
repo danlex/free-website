@@ -9,6 +9,13 @@ Build a free website with AI using Codex and GitHub Pages.
 
 The live homepage is the starter itself. On the public repo preview, a small top banner links to the template and docs. Cloned sites do not show that banner.
 
+## What is actually free
+
+- The starter and repo are free to copy
+- GitHub Pages hosting can stay free
+- The site stays static, so there is no build tooling cost
+- Your custom domain is usually a separate purchase
+
 ## Important before you publish
 
 This repo keeps a real `CNAME` file so the public demo can stay live at `free-website.tvl.tech`.
@@ -78,16 +85,21 @@ Then open [http://localhost:8000](http://localhost:8000).
 2. In GitHub, open `Settings` > `Pages`
 3. Choose `Deploy from a branch`
 4. Select `main` and `/ (root)`
-5. Replace or delete `CNAME` if it still says `free-website.tvl.tech`
-6. Add your custom domain
-7. Wait for GitHub to enable HTTPS
+5. Verify your custom domain in GitHub first if you own it
+6. Replace or delete `CNAME` if it still says `free-website.tvl.tech`
+7. Add your custom domain
+8. Wait for GitHub to enable HTTPS
 
 GitHub Pages hosting can stay free. The custom domain itself is usually a separate purchase from your domain provider.
+
+GitHub recommends verifying your custom domain before adding it to the repository:
+[Verifying your custom domain for GitHub Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages)
 
 ## What is included
 
 - Static starter files in the repo root
 - A one-command local preview script
+- A `.nojekyll` file so branch-based Pages serves the site directly
 - Three ready-to-copy Codex prompt recipes
 - A screenshot-first quickstart guide
 - A live `CNAME` for the public demo plus `CNAME.example` as a reference

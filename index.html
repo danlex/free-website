@@ -74,46 +74,81 @@
           <a href="#faq">FAQ</a>
           <a href="#contact">Contact</a>
         </nav>
-        <a class="button button-small button-primary" href="#contact">Start a Project</a>
+        <a class="button button-small button-primary template-only" href="#contact">Start a Project</a>
+        <a class="button button-small button-primary demo-only demo-inline-flex" href="https://github.com/danlex/free-website/generate">Use This Template</a>
       </header>
 
       <main id="top">
         <!-- Replace this hero with your actual audience, promise, and CTA. -->
         <section class="hero reveal">
           <div class="hero-copy">
-            <p class="eyebrow">Starter demo. Replace this copy.</p>
-            <h1>Turn what you do into one clear homepage.</h1>
-            <p class="lead">
+            <p class="eyebrow template-only">Starter demo. Replace this copy.</p>
+            <p class="eyebrow demo-only">Build a Free Website with AI</p>
+            <h1 class="template-only">Turn what you do into one clear homepage.</h1>
+            <h1 class="demo-only">Use this template, edit with Codex, and publish on GitHub Pages.</h1>
+            <p class="lead template-only">
               Use this starter for a consultant site, studio page, personal brand,
               or small business homepage. Rewrite the copy, swap the visuals,
               and keep only the sections you actually need.
             </p>
-            <div class="hero-actions">
+            <p class="lead demo-only">
+              The public demo shows the full path: use the template, rewrite the root files, preview locally, push to GitHub, turn on Pages, and connect your own domain.
+            </p>
+            <div class="hero-actions template-only">
               <a class="button button-primary" href="#contact">Start a Project</a>
               <a class="button button-secondary" href="#offer">See the Offer</a>
             </div>
-            <p class="hero-note">
+            <div class="hero-actions demo-only">
+              <a class="button button-primary" href="https://github.com/danlex/free-website/generate">Use This Template</a>
+              <a class="button button-secondary" href="https://github.com/danlex/free-website/blob/main/QUICKSTART.md">View Quickstart</a>
+            </div>
+            <p class="hero-note template-only">
               Good first edits: business name, hero copy, colors, proof, and the final CTA.
             </p>
-            <div class="pill-row">
+            <p class="hero-note demo-only">
+              Hosting can stay free. Your domain is usually a separate purchase.
+            </p>
+            <div class="pill-row template-only">
               <span class="pill">Clear headline</span>
               <span class="pill">Simple offer</span>
               <span class="pill">Real proof</span>
               <span class="pill">One CTA</span>
             </div>
+            <div class="pill-row demo-only">
+              <span class="pill">Static HTML/CSS/JS</span>
+              <span class="pill">Preview locally</span>
+              <span class="pill">Branch publish</span>
+              <span class="pill">Custom domain</span>
+            </div>
           </div>
 
           <aside class="hero-panel">
-            <p class="panel-label">Starter checklist</p>
-            <ul class="path-list helper-list">
-              <li>Replace the headline with one clear promise</li>
-              <li>Swap these cards for your real offer or services</li>
-              <li>Add one piece of proof: result, logo, testimonial, or case study</li>
-              <li>Change the final CTA to the action you actually want</li>
-            </ul>
-            <div class="panel-command">
-              <p class="panel-command-label">Local preview</p>
-              <code>sh scripts/preview.sh</code>
+            <div class="template-only">
+              <p class="panel-label">Starter checklist</p>
+              <ul class="path-list helper-list">
+                <li>Replace the headline with one clear promise</li>
+                <li>Swap these cards for your real offer or services</li>
+                <li>Add one piece of proof: result, logo, testimonial, or case study</li>
+                <li>Change the final CTA to the action you actually want</li>
+              </ul>
+              <div class="panel-command">
+                <p class="panel-command-label">Local preview</p>
+                <code>sh scripts/preview.sh</code>
+              </div>
+            </div>
+            <div class="demo-only">
+              <p class="panel-label">How it works</p>
+              <ul class="path-list helper-list">
+                <li>Use the template on GitHub</li>
+                <li>Edit <code>index.html</code>, <code>styles.css</code>, and <code>script.js</code> in Codex</li>
+                <li>Run a local preview before you publish</li>
+                <li>Push to GitHub and enable Pages from <code>main</code></li>
+                <li>Verify your domain, then replace <code>CNAME</code></li>
+              </ul>
+              <div class="panel-command">
+                <p class="panel-command-label">Best first prompt</p>
+                <code>Use prompts/landing-page.md first</code>
+              </div>
             </div>
           </aside>
         </section>
@@ -201,8 +236,10 @@
         <!-- These blocks are useful on the public repo demo without becoming the main story of a cloned site. -->
         <section class="section reveal" id="quickstart">
           <div class="section-heading">
-            <p class="section-label">Start Here</p>
-            <h2>The commands and links you will actually use.</h2>
+            <p class="section-label template-only">Start Here</p>
+            <p class="section-label demo-only">How It Works</p>
+            <h2 class="template-only">The commands and links you will actually use.</h2>
+            <h2 class="demo-only">The shortest path from template to live site.</h2>
           </div>
           <div class="command-grid">
             <article class="command-card">
@@ -226,12 +263,11 @@ git push</pre>
             </article>
             <article class="command-card">
               <p class="recipe-kicker">Before GitHub Pages</p>
-              <h3>Check the domain file first</h3>
+              <h3>Verify the domain, then check the file</h3>
               <p>
-                This public demo keeps <code>CNAME</code> set to
-                <code>free-website.tvl.tech</code>. In your copy, replace that
-                value with your own domain or delete <code>CNAME</code> until
-                you are ready to connect one.
+                GitHub recommends verifying your domain first. After that,
+                replace the demo <code>CNAME</code> value with your own domain
+                or delete it until you are ready to connect one.
               </p>
             </article>
           </div>
@@ -268,6 +304,14 @@ git push</pre>
             <details class="faq-item">
               <summary>Is the custom domain optional?</summary>
               <p>The product promise includes a custom domain. GitHub Pages hosting can stay free, but the domain itself is usually a separate purchase.</p>
+            </details>
+            <details class="faq-item">
+              <summary>What is actually free here?</summary>
+              <p>The starter, GitHub repo, and GitHub Pages hosting can stay free. What usually costs money is the domain you want to connect.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Should I verify my domain in GitHub first?</summary>
+              <p>Yes. GitHub recommends verifying the custom domain before you add it to the repository so you reduce takeover risk and keep ownership clearer.</p>
             </details>
             <details class="faq-item">
               <summary>What should I ask Codex to do first?</summary>

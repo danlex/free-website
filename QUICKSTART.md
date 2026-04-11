@@ -86,16 +86,20 @@ In GitHub:
 
 ## 8. Add a custom domain
 
-1. Open the repo root and check `CNAME`
-2. If it still says `free-website.tvl.tech`, replace it with your own domain or delete it for now
-3. In GitHub, open `Settings` > `Pages` and enter your custom domain
-4. Update your DNS records
+1. Verify the domain in GitHub first if you own it
+2. Open the repo root and check `CNAME`
+3. If it still says `free-website.tvl.tech`, replace it with your own domain or delete it for now
+4. In GitHub, open `Settings` > `Pages` and enter your custom domain
+5. Update your DNS records
 
 ![Screenshot 8](assets/screenshots/08-add-custom-domain.svg)
 
 ## 9. Verify HTTPS is active
 
 Wait for GitHub Pages to show HTTPS as enabled for the custom domain.
+
+GitHub recommends verifying the domain before adding it to the repository:
+[Verifying your custom domain for GitHub Pages](https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/verifying-your-custom-domain-for-github-pages)
 
 ![Screenshot 9](assets/screenshots/09-verify-https.svg)
 

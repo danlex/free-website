@@ -146,6 +146,22 @@ body.is-repo-demo .repo-banner {
   display: none;
 }
 
+.demo-only {
+  display: none;
+}
+
+body.is-repo-demo .template-only {
+  display: none;
+}
+
+body.is-repo-demo .demo-only {
+  display: block;
+}
+
+body.is-repo-demo .demo-inline-flex {
+  display: inline-flex;
+}
+
 body.is-repo-demo .brand-template {
   display: none;
 }
@@ -437,6 +453,14 @@ h3 {
   color: var(--ink);
   font-size: 0.92rem;
   overflow-wrap: anywhere;
+}
+
+.hero-actions.demo-only {
+  display: none;
+}
+
+body.is-repo-demo .hero-actions.demo-only {
+  display: flex;
 }
 
 .section,
