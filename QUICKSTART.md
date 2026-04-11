@@ -1,8 +1,9 @@
 # Quickstart
 
-This guide is the screenshot-first path from template to live site.
+This guide is the visual path from template to live site.
 The live homepage is the starter preview you will rewrite.
 On the public repo demo, a small top banner links to the template and docs. Cloned sites do not show that banner.
+The images below are guided mockups of each step, so you can see what to look for without needing the exact same screen state.
 
 - Repo: [github.com/danlex/free-website](https://github.com/danlex/free-website)
 - Use This Template: [github.com/danlex/free-website/generate](https://github.com/danlex/free-website/generate)
@@ -98,17 +99,3 @@ Wait for GitHub Pages to show HTTPS as enabled for the custom domain.
 ![Screenshot 9](assets/screenshots/09-verify-https.svg)
 
 GitHub Pages hosting can stay free. The custom domain itself is usually a separate purchase from your domain provider.
-
-## Screenshot placeholders
-
-The images above are placeholders until real screenshots are added:
-
-- `assets/screenshots/01-use-this-template.svg`
-- `assets/screenshots/02-clone-repository.svg`
-- `assets/screenshots/03-open-codex.svg`
-- `assets/screenshots/04-paste-prompt.svg`
-- `assets/screenshots/05-run-preview.svg`
-- `assets/screenshots/06-push-changes.svg`
-- `assets/screenshots/07-enable-pages.svg`
-- `assets/screenshots/08-add-custom-domain.svg`
-- `assets/screenshots/09-verify-https.svg`
