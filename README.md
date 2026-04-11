@@ -6,6 +6,9 @@ Build a free website with Codex and GitHub Pages.
 - Live preview: [free-website.tvl.tech](https://free-website.tvl.tech/)
 - Visual guide: [QUICKSTART.md](QUICKSTART.md)
 
+The default template content is now a full worked example for `alexandrudan.com`.
+In your own copy, replace name, domain, email, and offer details before publishing.
+
 ## One clear path
 
 1. Use This Template on GitHub
@@ -29,6 +32,17 @@ As of April 11, 2026 (official docs/pricing pages):
 - GitHub Pages: supports branch publishing, custom domains, and HTTPS
 
 This starter is for people who want full source control, no framework lock-in, and a free hosting path with GitHub Pages.
+
+## Worked example cycle
+
+This repository now includes a completed template-mode pass for `alexandrudan.com`:
+
+1. Replace placeholder sections with real audience and offer
+2. Align metadata, branding assets, and contact paths
+3. Run `sh scripts/prepublish-check.sh --strict`
+4. Push and configure Pages with a custom domain
+
+Treat it as a reference implementation, then adapt it for your own domain.
 
 ## Clone the right thing
 
@@ -57,6 +71,7 @@ Prompt recipes:
 - [prompts/landing-page.md](prompts/landing-page.md)
 - [prompts/personal-website.md](prompts/personal-website.md)
 - [prompts/portfolio.md](prompts/portfolio.md)
+- [prompts/alexandrudan.md](prompts/alexandrudan.md)
 
 Start with `landing-page.md` for the lowest-friction rewrite.
 Codex can also generate images for hero and section visuals.

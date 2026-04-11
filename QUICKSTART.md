@@ -4,6 +4,7 @@ This is the visual path from template to live website.
 Target outcome: your own content, on your own GitHub repo, on your own domain.
 
 The screenshots are guided mockups, so your exact UI can look slightly different.
+The template-mode content in this repo is a worked example for `alexandrudan.com`.
 
 - Repo: [github.com/danlex/free-website](https://github.com/danlex/free-website)
 - Use This Template: [github.com/danlex/free-website/generate](https://github.com/danlex/free-website/generate)
@@ -41,6 +42,8 @@ The main files you will edit are:
 - `styles.css`
 - `script.js`
 
+If you cloned this starter, replace the default `alexandrudan.com` values with your own.
+
 ![Screenshot 3](assets/screenshots/03-open-codex.svg)
 
 ## 4. Paste one of the prompt recipes
@@ -53,6 +56,7 @@ Alternative prompts:
 
 - [portfolio.md](prompts/portfolio.md)
 - [personal-website.md](prompts/personal-website.md)
+- [alexandrudan.md](prompts/alexandrudan.md)
 
 Codex can also generate images directly if you need a hero image or supporting visuals.
 
