@@ -1,6 +1,7 @@
 const isRepoDemo =
-  window.location.hostname === "danlex.github.io" &&
-  window.location.pathname.startsWith("/free-website");
+  window.location.hostname === "free-website.tvl.tech" ||
+  (window.location.hostname === "danlex.github.io" &&
+    window.location.pathname.startsWith("/free-website"));
 
 if (isRepoDemo) {
   document.body.classList.add("is-repo-demo");

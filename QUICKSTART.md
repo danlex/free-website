@@ -7,7 +7,7 @@ The images below are guided mockups of each step, so you can see what to look fo
 
 - Repo: [github.com/danlex/free-website](https://github.com/danlex/free-website)
 - Use This Template: [github.com/danlex/free-website/generate](https://github.com/danlex/free-website/generate)
-- Live site: [danlex.github.io/free-website](https://danlex.github.io/free-website/)
+- Live site: [free-website.tvl.tech](https://free-website.tvl.tech/)
 
 ## 1. Use This Template on GitHub
 

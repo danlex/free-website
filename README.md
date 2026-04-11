@@ -4,7 +4,7 @@ Build a free website with AI using Codex and GitHub Pages.
 
 - Use This Template: [github.com/danlex/free-website/generate](https://github.com/danlex/free-website/generate)
 - View Repo: [github.com/danlex/free-website](https://github.com/danlex/free-website)
-- Live starter preview: [danlex.github.io/free-website](https://danlex.github.io/free-website/)
+- Live starter preview: [free-website.tvl.tech](https://free-website.tvl.tech/)
 - Screenshot guide: [QUICKSTART.md](QUICKSTART.md)
 
 The live homepage is the starter itself. On the public repo preview, a small top banner links to the template and docs. Cloned sites do not show that banner.
